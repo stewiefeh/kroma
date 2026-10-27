@@ -283,7 +283,7 @@ body.has-cursor,body.has-cursor a,body.has-cursor button{cursor:none}
 .studio-inner{max-width:60rem;margin:0 auto}
 .studio .sec-title{margin-bottom:3rem}
 .studio-copy{font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.45;max-width:52rem;font-weight:500}
-.studio-copy .w{opacity:.18;transition:opacity .3s}
+.studio-copy .w{opacity:.28;transition:opacity .3s}
 .studio-facts{
   display:flex;gap:clamp(2rem,6vw,5rem);flex-wrap:wrap;margin-top:4.5rem;
   border-top:1.5px solid color-mix(in srgb,var(--ink) 25%,transparent);padding-top:1.6rem;

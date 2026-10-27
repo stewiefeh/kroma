@@ -268,15 +268,6 @@
           pin: true, scrub: 1, invalidateOnRefresh: true
         }
       });
-      /* cards tilt in as they arrive */
-      gsap.utils.toArray(".card").forEach(function (card, i) {
-        gsap.from(card, {
-          y: 60, rotate: i % 2 ? 2 : -2, opacity: 0, duration: .9, ease: "power3.out",
-          scrollTrigger: { trigger: card, containerAnimation: workTrack ? gsap.getTweensOf(workTrack)[0] : null, start: "left 90%" }
-        });
-      });
-    }
-
     /* studio copy: words ink in as you scroll */
     var copy = document.getElementById("studio-copy");
     if (copy) {
