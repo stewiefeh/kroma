@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KROMA — Digital studio in full color</title>
+<meta name="description" content="KROMA is a digital studio building loud, precise websites for people with something to say.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-panel" style="--c:#FF5A36"></div>
+  <div class="loader-panel" style="--c:#2E4BFF"></div>
+  <div class="loader-panel" style="--c:#FF3D9E"></div>
+  <div class="loader-panel" style="--c:#C6F24E"></div>
+  <div class="loader-word">KROMA</div>
+</div>
+
+<div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top" aria-label="KROMA home">
+    <span>K</span><span>R</span><span>O</span><span>M</span><span>A</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="nav-link" data-anim="flip" data-color="var(--cobalt)" href="#work">Work</a>
+    <a class="nav-link" data-anim="wipe" data-color="var(--magenta)" href="#studio">Studio</a>
+    <a class="nav-link" data-anim="scramble" data-color="var(--amber)" href="#services">Services</a>
+    <a class="nav-link" data-anim="outline" data-color="var(--lime)" href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <a class="nav-link menu-link" data-anim="flip" data-color="var(--cobalt)" href="#work">Work</a>
+  <a class="nav-link menu-link" data-anim="wipe" data-color="var(--magenta)" href="#studio">Studio</a>
+  <a class="nav-link menu-link" data-anim="scramble" data-color="var(--amber)" href="#services">Services</a>
+  <a class="nav-link menu-link" data-anim="outline" data-color="var(--lime)" href="#contact">Contact</a>
+</div>
+
+<main>
+
+  <section class="hero" id="hero" data-bg="#100D18" data-fg="#F5F3EE">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner">Digital studio</span></span>
+        <span class="line"><span class="line-inner">for brands that</span></span>
+        <span class="line line-accent"><span class="line-inner">refuse to whisper</span><span class="dot" aria-hidden="true"></span></span>
+      </h1>
+      <p class="hero-sub">We design and build loud, precise websites. The kind people screenshot.</p>
+      <a class="cta magnetic" href="#work"><span class="cta-fill"></span><span class="cta-label">See the work</span></a>
+    </div>
+    <div class="hero-foot">
+      <span class="hero-meta">Independent &amp; small on purpose</span>
+      <span class="hero-meta">St. Augustine, FL</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Design <i>/</i> Build <i>/</i> Launch <i>/</i> Design <i>/</i> Build <i>/</i> Launch <i>/</i> </span>
+      <span>Design <i>/</i> Build <i>/</i> Launch <i>/</i> Design <i>/</i> Build <i>/</i> Launch <i>/</i> </span>
+    </div>
+  </div>
+
+  <section class="work" id="work" data-bg="#F5F3EE" data-fg="#100D18">
+    <div class="work-head">
+      <h2 class="sec-title">Selected work</h2>
+      <p class="sec-note">A slice of what we ship. Each one gets its own identity, colors included.</p>
+    </div>
+    <div class="work-pin">
+      <div class="work-track">
+        <article class="card" style="--c1:#2E4BFF;--c2:#0A1650" data-tilt>
+          <div class="card-art art-a"></div>
+          <div class="card-info">
+            <h3>Tidal &amp; Co</h3>
+            <p>Seafood market, brand site</p>
+          </div>
+        </article>
+        <article class="card" style="--c1:#FF3D9E;--c2:#5C0A3E" data-tilt>
+          <div class="card-art art-b"></div>
+          <div class="card-info">
+            <h3>Bloomcart</h3>
+            <p>Flower delivery, commerce</p>
+          </div>
+        </article>
+        <article class="card" style="--c1:#FFB03A;--c2:#7A3E00" data-tilt>
+          <div class="card-art art-c"></div>
+          <div class="card-info">
+            <h3>Nightjar</h3>
+            <p>Jazz club, bookings &amp; live sets</p>
+          </div>
+        </article>
+        <article class="card" style="--c1:#C6F24E;--c2:#2C4A00" data-tilt>
+          <div class="card-art art-d"></div>
+          <div class="card-info">
+            <h3>Fieldnotes</h3>
+            <p>Outdoor journal, editorial</p>
+          </div>
+        </article>
+        <article class="card card-end" style="--c1:#FF5A36;--c2:#5C1500">
+          <div class="card-info">
+            <h3>Your project<br>goes here</h3>
+            <a class="card-link" href="#contact">Start a project</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="studio" id="studio" data-bg="#FF5A36" data-fg="#100D18">
+    <div class="studio-inner">
+      <h2 class="sec-title reveal-lines"><span class="line"><span class="line-inner">Small studio,</span></span><span class="line"><span class="line-inner">sharp output</span></span></h2>
+      <p class="studio-copy" id="studio-copy">KROMA is a two-person studio that takes on a handful of projects a year and gives each one its own identity. No templates, no recycled layouts, no beige. We care about the parts most people skip: how a page loads, how a button feels, how color moves when you scroll.</p>
+      <div class="studio-facts">
+        <div class="fact"><span class="fact-k">Founded</span><span class="fact-v">2024</span></div>
+        <div class="fact"><span class="fact-k">Projects a year</span><span class="fact-v">A handful</span></div>
+        <div class="fact"><span class="fact-k">Color palettes hoarded</span><span class="fact-v">Far too many</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" data-bg="#100D18" data-fg="#F5F3EE">
+    <div class="services-head">
+      <h2 class="sec-title">What we do</h2>
+    </div>
+    <ul class="svc-list">
+      <li class="svc" style="--c:#2E4BFF">
+        <button class="svc-row" aria-expanded="false">
+          <span class="svc-name">Identity &amp; art direction</span>
+          <span class="svc-plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc-body"><p>Logos, palettes, type systems and the rules that keep them alive. Built to survive contact with the real world.</p></div>
+      </li>
+      <li class="svc" style="--c:#FF3D9E">
+        <button class="svc-row" aria-expanded="false">
+          <span class="svc-name">Web design</span>
+          <span class="svc-plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc-body"><p>Screens that carry a point of view. Layout, motion and color treated as one system, not three meetings.</p></div>
+      </li>
+      <li class="svc" style="--c:#FFB03A">
+        <button class="svc-row" aria-expanded="false">
+          <span class="svc-name">Development</span>
+          <span class="svc-plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc-body"><p>Hand-built front ends with buttery scroll and 60fps motion. Fast on throttled phones, not just on our machines.</p></div>
+      </li>
+      <li class="svc" style="--c:#C6F24E">
+        <button class="svc-row" aria-expanded="false">
+          <span class="svc-name">Ongoing care</span>
+          <span class="svc-plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc-body"><p>Updates, tweaks and seasonal refreshes after launch. Sites are gardens, not sculptures.</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact" data-bg="#2E4BFF" data-fg="#F5F3EE">
+    <div class="contact-inner">
+      <h2 class="contact-title"><span class="line"><span class="line-inner">Got a project?</span></span><span class="line"><span class="line-inner">Let's make it loud.</span></span></h2>
+      <a class="cta magnetic cta-big" href="mailto:hello@kroma.studio"><span class="cta-fill"></span><span class="cta-label">hello@kroma.studio</span></a>
+      <div class="contact-meta">
+        <span id="clock" aria-label="Local time">--:--</span>
+        <span>Replies within a day</span>
+      </div>
+    </div>
+    <footer class="foot">
+      <span>© 2026 KROMA. All color reserved.</span>
+      <div class="foot-links">
+        <a href="#top">Back to top</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Are.na</a>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
