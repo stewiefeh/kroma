@@ -54,6 +54,8 @@ img{display:block;max-width:100%}
 .js .loader{
   display:block;position:fixed;inset:0;z-index:100;overflow:hidden;
 }
+.js .loader{animation:loaderFallback .01s linear 4.5s forwards}
+@keyframes loaderFallback{to{visibility:hidden;pointer-events:none}}
 .js .loader-panel{
   position:absolute;top:0;left:0;width:20.5%;height:100%;background:var(--c);
   transform:scaleY(0);transform-origin:top;
